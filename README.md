@@ -9,7 +9,7 @@ The state file is created after running terraform apply for the first time, once
 
 ## 2. When is the lock file present?
 
-The lock file (.terraform.tfstate.lock.info) is present only while Terraform is performing a write operation such as:
+The lock file (statefile.tfstate.tflock) is present only while Terraform is performing a write operation such as:
 
 terraform apply
 
