@@ -14,7 +14,7 @@ data "aws_ami" "debian" {
 # https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
 resource "aws_instance" "web" {
   ami                    = data.aws_ami.debian.id
-  instance_type          = "t2.micro"
+  instance_type          = "t3.micro"
 
   tags = {
     Name = "Web"
